@@ -1,0 +1,29 @@
+<form class="form-horizontal" ng-controler='formCtrl'>
+  <fieldset>
+    <legend>New Method</legend>
+    <div class="form-group">
+      <label for="inputName" class="col-lg-3 control-label">Name</label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="inputName" maxlength="25" ng-model="method.name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputDescription" class="col-lg-3 control-label" maxlength="2000">Instruction</label>
+      <div class="col-lg-9">
+        <textarea class="form-control" rows="3" id="inputDescription" ng-model="method.instruction"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputUrl" class="col-lg-3 control-label">Picture</label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="inputUrl" maxlength="200" placeholder='http://' ng-model="method.url">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-3">
+      <a href="#/methods" class="btn btn-default" ng-click="saveData(method)" role="button">Save</a>
+        <a href="#/methods" class="btn btn-default" role="button">Cancel</a>
+      </div>
+    </div>
+  </fieldset>
+</form>

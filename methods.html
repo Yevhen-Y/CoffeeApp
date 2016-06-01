@@ -1,0 +1,26 @@
+<div ng-controler='methodsCtrl' class="tabs">
+<ul class="nav nav-tabs" class="listTabs">
+  <li class="active"><a data-target="#methods" data-toggle="tab">Methods</a></li>
+  <li><a data-target="#ownMethods" data-toggle="tab">Own Methods</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade active in" id="methods">
+    <div ng-repeat='method in methods' class="methodsContent">
+<h2 class="methidTitle">{{method.title}}</h2>
+<img src="{{method.pictureURL}}"><br>
+<a href="#/methods/{{$index}}" class="btn btn-default" role="button" >Show recipe<span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+</div>
+<div class="tab-pane fade" id="ownMethods">
+    <ul>
+    <li><a href="#/form" class="btn btn-default btn-xs pull-right" role="button" >Add New Method</a></li>
+    </ul>
+    <div ng-repeat='method in newMethodList' class="methodsContent">
+<h2 class="methidTitle">{{method.title}}</h2>
+<img src="{{method.pictureURL}}"><br>
+<a href="#/methods/{{$index}}" class="btn btn-default" role="button" >Show recipe<span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+  </div>
+  </div>
+  
+</div>

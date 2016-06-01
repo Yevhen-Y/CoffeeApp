@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Shops</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-sanitize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-route.js"></script>
+    <script src="ngStorage.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body ng-app="myApp">
+
+<div class="container-fluid">
+<div class="navbar-header" class='col-lg-12'>
+<a class="navbar-brand" href="#"><img src="logo/coffee_stain.png" alt="Coffee"></a>
+</div>
+          <ul class="nav navbar-nav navbar-right">
+            <li ><a href="#/home" class="home">Home</a></li>
+            <li ><a href="#/methods" class='methods'>Methods</a></li>
+            <li ><a href="#" class='coffeeShops'>Coffee Shops</a></li>
+          </ul>
+</div>
+
+<div class="container">
+  <ng-view></ng-view>
+</div>
+<div class="container-fluid">
+  <footer>
+    <h5>It's all about coffee <span class="glyphicon glyphicon-heart-empty"></span></h5>
+  </footer>
+</div>
+
+</body>
+<script src="myApp.js"></script>
+<script src="myAppConfig.js"></script>
+<script src="homeCtrl.js"></script>
+<script src="methodsCtrl.js"></script>
+<script src="methodDetailCtrl.js"></script>
+<script src="formCtrl.js"></script>
+</html>
