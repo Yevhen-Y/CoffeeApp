@@ -9,5 +9,6 @@ myApp.controller('methodDetailCtrl', ['$scope', '$routeParams', '$http', '$local
 
   console.log($scope.methods);
 })
+
     }
 ]);

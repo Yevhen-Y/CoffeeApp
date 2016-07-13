@@ -22,6 +22,16 @@ myApp.config(function($routeProvider) {
         controller: 'formCtrl'
     })
 
+    .when('/ownMethods', {
+        templateUrl: 'ownMethods.html',
+        controller: 'ownMethodsCtrl'
+    })
+
+    .when('/coffeeShops', {
+        templateUrl: 'coffeeShops.html',
+        controller: 'coffeeShopsCtrl'
+    })
+
    .otherwise({
         redirectTo: '/home'
       });
@@ -30,6 +40,20 @@ myApp.config(function($routeProvider) {
     $routeProvider.when('/methods/:itemId', {
         templateUrl: 'methodDetail.html',
         controller: 'methodDetailCtrl',
+        resolve: {
+            delay: function($q, $timeout) {
+                var delay = $q.defer();
+
+                $timeout(delay.resolve, 1000);
+
+                return delay.promise;
+            }
+          }
+        })
+
+    $routeProvider.when('/ownMethods/:itemId', {
+        templateUrl: 'ownMethodDetail.html',
+        controller: 'ownMethodDetailCtrl',
         resolve: {
             delay: function($q, $timeout) {
                 var delay = $q.defer();

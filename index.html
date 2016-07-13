@@ -19,21 +19,22 @@
 
 <body ng-app="myApp">
 
-<div class="container-fluid">
+<div class="container header_container">
 <div class="navbar-header" class='col-lg-12'>
-<a class="navbar-brand" href="#"><img src="logo/coffee_stain.png" alt="Coffee"></a>
+<a class="navbar-brand" href="#"><img src="logo/coffee_stain.png" alt="Coffee" id="logo"></a>
 </div>
           <ul class="nav navbar-nav navbar-right">
             <li ><a href="#/home" class="home">Home</a></li>
             <li ><a href="#/methods" class='methods'>Methods</a></li>
-            <li ><a href="#" class='coffeeShops'>Coffee Shops</a></li>
+            <li ><a href="#/coffeeShops" class='coffeeShops'>Coffee Shops</a></li>
           </ul>
 </div>
 
 <div class="container">
   <ng-view></ng-view>
 </div>
-<div class="container-fluid">
+<div class="container">
+<hr>
   <footer>
     <h5>It's all about coffee <span class="glyphicon glyphicon-heart-empty"></span></h5>
   </footer>
@@ -46,4 +47,7 @@
 <script src="methodsCtrl.js"></script>
 <script src="methodDetailCtrl.js"></script>
 <script src="formCtrl.js"></script>
+<script src="ownMethodsCtrl.js"></script>
+<script src="ownMethodDetailCtrl.js"></script>
+<script src="coffeeShopsCtrl.js"></script>
 </html>
