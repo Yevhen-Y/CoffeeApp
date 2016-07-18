@@ -19,6 +19,16 @@
       "title": "Teahouse",
       "pictureURL": "images/coffeeShopsImages/teahouse.jpg",
       "location": "1 Soborna Sq, Dnipro"
+    },
+    {
+      "title": "Bakery street 5/7",
+      "pictureURL": "images/coffeeShopsImages/Bakery_street.jpg",
+      "location": "5/7 Barikadna St, Dnipro"
+    },
+    {
+      "title": "Сaffe in Grani",
+      "pictureURL": "images/coffeeShopsImages/ingrani.jpg",
+      "location": "55 Dmitro Yavornitskiy Ave, Dnipro"
     }
   ]
 }

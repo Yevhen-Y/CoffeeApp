@@ -149,6 +149,7 @@ footer{
 }
 
 .nav a{
+  border: 1px solid lightgrey;
   background:  #f2f2f2;
   border-radius:5px;
 }
