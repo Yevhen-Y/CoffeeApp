@@ -159,3 +159,8 @@ footer{
     font-weight: bold;
     font-family: Arial;
 }
+
+#icons{
+  width: 30px;
+  height: auto;
+}
