@@ -13,7 +13,7 @@
     <div ng-repeat='method in newMethodList' class="methodsContent">
 <h2 class="methodTitle">{{method.title}}</h2>
 <img src="{{method.pictureURL}}"><br>
-<a href="#/ownMethods/{{$index}}" class="btn btn-default" role="button" >Show recipe<span class="glyphicon glyphicon-chevron-right"></span></a>
+<a href="#/ownMethods/{{newMethodList[$index].title}}" class="btn btn-default" role="button" >Show recipe<span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
   </div>
   </div>

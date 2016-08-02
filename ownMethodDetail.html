@@ -1,8 +1,9 @@
 <div ng-controler='ownMethodDetailCtrl'  class="methodDetail">
-<h3>{{newMethodList[item].title}}</h3>
+<h3>{{newMethodList[0].title}}</h3>
 <hr>
+<a href="#/ownMethods" class="btn btn-default btn-xs pull-right" role="button" ng-click="deleteRecipe()" id="delRecipeBtn" >Delete recipe <span class="glyphicon glyphicon glyphicon-remove"></span></a>
 
-	<img src="{{newMethodList[item].pictureURL}}" alt="Coffee drink" class="img-responsive">
+	<img src="{{newMethodList[0].pictureURL}}" alt="Coffee drink" class="img-responsive">
 
-	<p class="methodDetailInstruction">{{newMethodList[item].instruction}}</p>
+	<p class="methodDetailInstruction">{{newMethodList[0].instruction}}</p>
 </div>

@@ -9,4 +9,5 @@ for (var i = 0; i < localStorage.length; i++) {
         $scope.newMethodList.push(JSON.parse(localStorage.getItem(key)));
         $scope.myMethods = $scope.newMethodList;
     }
+
 }]);

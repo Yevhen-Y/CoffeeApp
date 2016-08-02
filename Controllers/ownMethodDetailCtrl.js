@@ -6,11 +6,15 @@ myApp.controller('ownMethodDetailCtrl', ['$scope', '$routeParams', '$localStorag
 
 $scope.newMethodList = [];
  
-
-for (var i = 0; i < localStorage.length; i++) {
-        key = localStorage.key(i);
-        $scope.newMethodList.push(JSON.parse(localStorage.getItem(key)));
+        $scope.newMethodList.push(JSON.parse(localStorage.getItem('ngStorage-'+ $scope.item)));
         $scope.myMethods = $scope.newMethodList;
+
+
+
+console.log($scope.newMethodList);
+
+    $scope.deleteRecipe = function() {
+        localStorage.removeItem('ngStorage-'+$scope.item)
     }
 
 

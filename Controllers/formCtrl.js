@@ -7,6 +7,6 @@ $scope.saveData = function(method){
         'instruction': method.instruction,
         'pictureURL': method.url 
 }
-        $localStorage[localStorage.length+1] = newMethod;
+        $localStorage[newMethod.title] = newMethod;
     };
 }]);
